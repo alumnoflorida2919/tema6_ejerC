@@ -1,6 +1,8 @@
 mkdir /home/juan
 mkdir /home/juan/bootstrap
 mkdir /etc/tema6-c
+apt-get update
+apt-get install apache2
 cd /etc/apache2
 sed -i 's/80/90/g' "ports.conf"
 cd /etc/apache2/sites-available
